@@ -57,18 +57,18 @@ struct SplitBillView: View {
                             .foregroundColor(Color.red)
                         }
                     }
-//                    HStack {
-//                        if tipPercent != 0 {
-//                            Text("Bill plus Tip = ")
-//                        } else {
-//                            Text("Bill with no Tip = ")
-//                                .fontWeight(.heavy)
-//                                .foregroundColor(Color.red)
-//                        }
-//                        Text(billAmount * (1.0 + Double(tipPercent)/100), format: .number)
-//                            .fontWeight(.heavy)
-//                            .foregroundColor(Color.blue)
-//                    }
+                    HStack {
+                        if tipPercent != 0 {
+                            Text("Bill plus Tip = ")
+                        } else {
+                            Text("Bill with no Tip = ")
+                                .fontWeight(.heavy)
+                                .foregroundColor(Color.red)
+                        }
+                        Text(billAmount * (1.0 + Double(tipPercent)/100), format: .number)
+                            .fontWeight(.heavy)
+                            .foregroundColor(Color.blue)
+                    }
                 }
 
                 Section("Amount for each person") {
